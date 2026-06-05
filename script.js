@@ -206,7 +206,7 @@ function sendToWhatsApp() {
     const message = `Hello Hotel Victory International,\n\nI would like to book a stay:\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Room Type:* ${room}\n*Check-in:* ${checkin}\n*Check-out:* ${checkout}\n*Guests:* ${guests}\n\nPlease confirm availability.`;
     
     // Phone number from footer
-    const hotelPhone = "916238199113";
+    const hotelPhone = "918075005504";
     const encodedMessage = encodeURIComponent(message);
     
     window.open(`https://wa.me/${hotelPhone}?text=${encodedMessage}`, '_blank');
