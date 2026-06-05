@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Hotel in Thrissur, Kerala | Hotel Victory International Kunnamkulam</title>
+    <meta name="description" content="Experience luxury at Hotel Victory International, the best hotel in Kunnamkulam, Thrissur. Enjoy premium rooms, top amenities, and a perfect stay in Kerala.">
+    
+    <!-- SEO / Open Graph Meta Tags -->
+    <meta property="og:title" content="Best Hotel in Thrissur, Kerala | Hotel Victory International">
+    <meta property="og:description" content="Experience luxury at Hotel Victory International, the best hotel in Kunnamkulam, Thrissur. Enjoy premium rooms, top amenities, and a perfect stay in Kerala.">
+    <meta property="og:image" content="https://i.ibb.co/xt3qwmR9/Chat-GPT-Image-Jun-5-2026-04-46-10-PM.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="Photos/Logo/hotel_favicon.png?v=2" type="image/png">
+    
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- JSON-LD Structured Data for Local Business SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Hotel Victory International",
+      "description": "Experience luxury at Hotel Victory International, the best hotel in Kunnamkulam, Thrissur, Kerala. Premium AC rooms and top-notch amenities.",
+      "image": "Photos/Others/Facade_Angle1.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "M32C+R8C, Byju Rd",
+        "addressLocality": "Kunnamkulam, Thrissur",
+        "addressRegion": "Kerala",
+        "postalCode": "680503",
+        "addressCountry": "IN"
+      },
+      "telephone": "+916238199113",
+      "priceRange": "₹₹",
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "4"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.0",
+        "reviewCount": "125"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="Photos/Logo/transparent_full_logo.png" alt="Hotel Victory KR International Logo">
+        </div>
+        
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="mobile-menu" role="button" tabindex="0" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><button class="book-btn" onclick="openModal()" style="cursor: pointer;">Book Now</button></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <!-- Using one of the facade/outside shots -->
+        <img src="Photos/Others/Facade_Angle1.jpg" alt="Hotel Victory International Facade - Best Hotel in Kunnamkulam Thrissur" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Experience Premium Comfort</h1>
+            <button class="hero-book-btn" onclick="openModal()">BOOK NOW</button>
+        </div>
+    </section>
+
+    <section id="rooms" class="section-padding">
+        <h2 class="section-title reveal">Our Signature Rooms</h2>
+        <div class="rooms-grid">
+            <!-- AC DELUX ROOM -->
+            <div class="room-card reveal">
+                <div class="room-img-container carousel-container">
+                    <div class="carousel" id="carousel-1">
+                        <img src="Photos/Others/Room_Deluxe_Wide.jpg" alt="Luxury A/C Deluxe Room in Kunnamkulam Hotel" loading="lazy">
+                        <img src="Photos/Others/Room_DoubleBed_Front.jpg" alt="Premium Double Bed in Thrissur Accommodation" loading="lazy">
+                        <img src="Photos/Others/Washroom_GrabBars.jpg" alt="Modern Washroom Facilities Hotel Victory Kerala" loading="lazy">
+                    </div>
+                    <span class="room-badge" style="z-index: 10;">Free Cancellation</span>
+                    <button class="carousel-btn prev" aria-label="Previous Image" onclick="moveCarousel('carousel-1', -1)">&#10094;</button>
+                    <button class="carousel-btn next" aria-label="Next Image" onclick="moveCarousel('carousel-1', 1)">&#10095;</button>
+                </div>
+                <div class="room-details">
+                    <h3>A/C DELUXE ROOM</h3>
+                    <div class="room-meta">
+                        <span class="hover-icon"><i class="ph ph-users"></i> Max 3 Guests</span> | 
+                        <span class="hover-icon"><i class="ph ph-arrows-out"></i> 250 sq.ft</span> | 
+                        <span class="hover-icon"><i class="ph ph-buildings"></i> City View</span>
+                    </div>
+                    <div class="room-features">
+                        <span class="hover-feature"><i class="ph ph-bed"></i> 1 King Bed</span>
+                        <span class="hover-feature"><i class="ph ph-bathtub"></i> 1 Bathroom</span>
+                        <span class="hover-feature"><i class="ph ph-snowflake"></i> Air Conditioning</span>
+                        <span class="hover-feature"><i class="ph ph-bell-ringing"></i> Room Service</span>
+                        <span class="hover-feature"><i class="ph ph-wifi-high"></i> Free Wi-Fi</span>
+                        <span class="hover-feature"><i class="ph ph-drop"></i> Mineral Water</span>
+                        <span class="hover-feature"><i class="ph ph-desktop"></i> Work Desk</span>
+                        <span class="hover-feature"><i class="ph ph-broom"></i> Daily Housekeeping</span>
+                    </div>
+                    <div class="room-footer">
+                        <div class="price-box">
+                            <span class="price-old">₹ 2,500</span>
+                            <span class="price-new">₹ 2,000</span>
+                            <span class="price-tax">+₹ 240 taxes & fees / Night</span>
+                        </div>
+                        <button class="btn-outline" onclick="openModal('A/C Deluxe Room')" style="background: transparent;">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NON AC ROOM -->
+            <div class="room-card reveal" style="transition-delay: 0.2s;">
+                <div class="room-img-container carousel-container">
+                    <div class="carousel" id="carousel-2">
+                        <img src="Photos/Others/Room_TwinBeds_Front.jpg" alt="Standard Non-AC Room in Kunnamkulam" loading="lazy">
+                        <img src="Photos/Others/Room_TwinBeds_Side.jpg" alt="Affordable Twin Beds Accommodation Kerala" loading="lazy">
+                        <img src="Photos/Others/Room_TV.jpg" alt="Hotel Room Amenities Thrissur" loading="lazy">
+                    </div>
+                    <span class="room-badge" style="z-index: 10;">5% off Food</span>
+                    <button class="carousel-btn prev" aria-label="Previous Image" onclick="moveCarousel('carousel-2', -1)">&#10094;</button>
+                    <button class="carousel-btn next" aria-label="Next Image" onclick="moveCarousel('carousel-2', 1)">&#10095;</button>
+                </div>
+                <div class="room-details">
+                    <h3>NON-AC STANDARD ROOM</h3>
+                    <div class="room-meta">
+                        <span class="hover-icon"><i class="ph ph-users"></i> Max 2 Guests</span> | 
+                        <span class="hover-icon"><i class="ph ph-arrows-out"></i> 150 sq.ft</span>
+                    </div>
+                    <div class="room-features">
+                        <span class="hover-feature"><i class="ph ph-bed"></i> 1 King Bed</span>
+                        <span class="hover-feature"><i class="ph ph-bathtub"></i> 1 Bathroom</span>
+                        <span class="hover-feature"><i class="ph ph-wifi-high"></i> Free Wi-Fi</span>
+                        <span class="hover-feature"><i class="ph ph-fan"></i> Fan / Ventilation</span>
+                        <span class="hover-feature"><i class="ph ph-bell-ringing"></i> Room Service</span>
+                        <span class="hover-feature"><i class="ph ph-drop"></i> Mineral Water</span>
+                        <span class="hover-feature"><i class="ph ph-broom"></i> Daily Housekeeping</span>
+                    </div>
+                    <div class="room-footer">
+                        <div class="price-box">
+                            <span class="price-new">₹ 1,400</span> 
+                            <span class="price-tax">+ taxes & fees / Night</span>
+                        </div>
+                        <button class="btn-outline" onclick="openModal('Non AC Standard Room')" style="background: transparent;">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="section-padding">
+        <h2 class="section-title reveal">Premium Amenities & Facilities</h2>
+        <div class="rooms-grid">
+            <div class="room-card reveal">
+                <div class="room-img-container">
+                    <img src="Photos/Others/Restaurant_Wide.jpg" alt="In-house Restaurant" loading="lazy">
+                </div>
+                <div class="room-details">
+                    <h3 style="color: var(--accent-color);">Multi-Cuisine Restaurant & Bar</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 15px;">Indulge in culinary delights at our premium restaurant, offering a wide array of local Kerala specialties and international cuisines. A fully-stocked bar is also available for your relaxation.</p>
+                </div>
+            </div>
+            <div class="room-card reveal" style="transition-delay: 0.2s;">
+                <div class="room-img-container">
+                    <img src="Photos/Others/Conference_Room_Wide.jpg" alt="Conference Room" loading="lazy">
+                </div>
+                <div class="room-details">
+                    <h3 style="color: var(--accent-color);">Conference & Banquet Facilities</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 15px;">Host your business meetings and corporate events in our state-of-the-art conference rooms, equipped with high-speed Wi-Fi, elevator access, and full power backup.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="policies" class="section-padding" style="background: var(--bg-color);">
+        <h2 class="section-title reveal">Hotel Policies & Charges</h2>
+        <div class="info-bar reveal policies-grid" style="max-width: 900px; margin: 0 auto; text-align: left; align-items: start;">
+            <div>
+                <h4 style="color: var(--accent-color); margin-bottom: 15px; font-family: 'Outfit', sans-serif; font-size: 1.2rem;">General Policies</h4>
+                <ul style="color: var(--text-secondary); margin-left: 20px; line-height: 2;">
+                    <li><strong>Check-in / Check-out:</strong> 12:00 PM</li>
+                    <li>Couple-friendly; Local IDs accepted (Aadhaar, Passport, Driving License)</li>
+                    <li><strong>Note:</strong> Groups consisting only of male guests are not permitted.</li>
+                    <li>Primary guest must be at least 18 years old</li>
+                    <li>Pets are not allowed on the premises</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: var(--accent-color); margin-bottom: 15px; font-family: 'Outfit', sans-serif; font-size: 1.2rem;">Services & Charges</h4>
+                <ul style="color: var(--text-secondary); margin-left: 20px; line-height: 2;">
+                    <li><strong>Cancellation:</strong> Free cancellation up to 24 hrs before check-in (on select rooms)</li>
+                    <li>Laundry service available (additional charges apply)</li>
+                    <li>24-hour room service & housekeeping included</li>
+                    <li>Elevator/Lift & Power backup included</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+        <div class="testimonial-slider-container" style="position: relative; padding: 0 40px;">
+            <button class="slider-btn prev-btn" aria-label="Previous Reviews" onclick="scrollTestimonials(-1)">&#10094;</button>
+            
+            <div class="testimonial-track" id="testimonialTrack">
+                <!-- Authentic Review 1 -->
+                <div class="room-card reveal testimonial-card" style="padding: 25px 20px; text-align: center;">
+                    <div style="color: var(--accent-color); font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+                    <p style="font-style: italic; color: var(--text-secondary); margin-bottom: 15px; font-size: 0.9rem;">"Clean, spacious, and well-maintained rooms. The staff were very helpful and provided great service throughout our stay. Convenient location near the town."</p>
+                    <h4 style="color: var(--text-primary); font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 5px;">- Verified Guest</h4>
+                    <span style="font-size: 0.75rem; color: var(--accent-color);">MakeMyTrip Review</span>
+                </div>
+                
+                <!-- Authentic Review 2 -->
+                <div class="room-card reveal testimonial-card" style="padding: 25px 20px; text-align: center; transition-delay: 0.1s;">
+                    <div style="color: var(--accent-color); font-size: 1.2rem; margin-bottom: 10px;">★★★★☆</div>
+                    <p style="font-style: italic; color: var(--text-secondary); margin-bottom: 15px; font-size: 0.9rem;">"The on-site restaurant has excellent food quality, especially the buffet options. The hotel is easily accessible and provides good basic amenities like AC and power backup."</p>
+                    <h4 style="color: var(--text-primary); font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 5px;">- Google Maps User</h4>
+                    <span style="font-size: 0.75rem; color: var(--accent-color);">Local Guide</span>
+                </div>
+
+                <!-- Authentic Review 3 -->
+                <div class="room-card reveal testimonial-card" style="padding: 25px 20px; text-align: center; transition-delay: 0.2s;">
+                    <div style="color: var(--accent-color); font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+                    <p style="font-style: italic; color: var(--text-secondary); margin-bottom: 15px; font-size: 0.9rem;">"Very helpful staff and excellent service. The rooms are kept very neat. It's a great spot if you need a comfortable place right in Kunnamkulam town."</p>
+                    <h4 style="color: var(--text-primary); font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 5px;">- Verified Guest</h4>
+                    <span style="font-size: 0.75rem; color: var(--accent-color);">GoIbibo Review</span>
+                </div>
+
+                <!-- Authentic Review 4 -->
+                <div class="room-card reveal testimonial-card" style="padding: 25px 20px; text-align: center; transition-delay: 0.3s;">
+                    <div style="color: var(--accent-color); font-size: 1.2rem; margin-bottom: 10px;">★★★★☆</div>
+                    <p style="font-style: italic; color: var(--text-secondary); margin-bottom: 15px; font-size: 0.9rem;">"A good stay overall. The restaurant food was surprisingly good, and having an elevator and good AC made the stay very comfortable. Will visit again."</p>
+                    <h4 style="color: var(--text-primary); font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 5px;">- Google Maps User</h4>
+                    <span style="font-size: 0.75rem; color: var(--accent-color);">Google Review</span>
+                </div>
+            </div>
+            
+            <button class="slider-btn next-btn" aria-label="Next Reviews" onclick="scrollTestimonials(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-padding" style="background: var(--bg-color);">
+        <h2 class="section-title reveal">Photo Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item reveal">
+                <img src="Photos/Others/Reception_Lobby.jpg" alt="Elegant Reception Lobby" loading="lazy">
+                <div class="gallery-overlay">Elegant Reception Lobby</div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 0.1s;">
+                <img src="Photos/Others/Entrance_Driveway.jpg" alt="Grand Entrance" loading="lazy">
+                <div class="gallery-overlay">Grand Entrance</div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 0.2s;">
+                <img src="Photos/Others/Restaurant_Buffet.jpg" alt="Premium Buffet" loading="lazy">
+                <div class="gallery-overlay">Premium Buffet</div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 0.3s;">
+                <img src="Photos/Others/Room_Bed_Details.jpg" alt="Plush Bedding Details" loading="lazy">
+                <div class="gallery-overlay">Plush Bedding Details</div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 0.4s;">
+                <img src="Photos/Others/Washroom_GrabBars.jpg" alt="Modern Washrooms" loading="lazy">
+                <div class="gallery-overlay">Modern Washrooms</div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 0.5s;">
+                <img src="Photos/Others/Reception_Wide.jpg" alt="Spacious Reception Area" loading="lazy">
+                <div class="gallery-overlay">Spacious Reception Area</div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 0.6s;">
+                <img src="Photos/Others/Restaurant_Table_Setting.jpg" alt="Fine Dining Experience" loading="lazy">
+                <div class="gallery-overlay">Fine Dining Experience</div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 0.7s;">
+                <img src="Photos/Others/Room_TwinBeds_Side.jpg" alt="Comfortable Twin Beds" loading="lazy">
+                <div class="gallery-overlay">Comfortable Twin Beds</div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 0.8s;">
+                <img src="Photos/Others/Facade_Angle2.jpg" alt="Hotel Exterior View" loading="lazy">
+                <div class="gallery-overlay">Hotel Exterior View</div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 0.9s;">
+                <img src="Photos/Others/Room_DoubleBed_Front.jpg" alt="Premium Room Interior" loading="lazy">
+                <div class="gallery-overlay">Premium Room Interior</div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 1.0s;">
+                <img src="Photos/Others/Hallway_Doors_107.jpg" alt="Elegant Hallways" loading="lazy">
+                <div class="gallery-overlay">Elegant Hallways</div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 1.1s;">
+                <img src="Photos/Others/Conference_Room_Chairs.jpg" alt="Conference Facilities" loading="lazy">
+                <div class="gallery-overlay">Conference Facilities</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding" style="background: var(--surface-color-light);">
+        <h2 class="section-title reveal">Visit Us</h2>
+        <div class="info-bar reveal" style="max-width: 800px; margin: 0 auto; margin-bottom: 50px;">
+            <div class="info-item hover-lift" style="text-align: center;">
+                <span class="info-label"><i class="ph ph-map-pin"></i> Address</span>
+                <span class="info-value" style="font-size: 1rem; color: var(--text-primary);">M32C+R8C, Byju Rd, Kunnamkulam, Kerala 680503</span>
+            </div>
+            <div class="info-item hover-lift" style="text-align: center;">
+                <span class="info-label"><i class="ph ph-phone"></i> Direct Booking</span>
+                <span class="info-value" style="font-size: 1rem; color: var(--accent-color);">6238199113</span>
+            </div>
+        </div>
+        <div class="reveal" style="max-width: 1000px; margin: 0 auto; border-radius: 20px; overflow: hidden; border: 1px solid var(--glass-border); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <iframe src="https://maps.google.com/maps?q=Hotel%20Victory%20International,%20Kunnamkulam&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Hotel Victory International</h4>
+                <p>Experience the best hospitality at Hotel Victory International, the premier hotel in Kunnamkulam, Thrissur. Perfectly located in Kerala, we offer luxury rooms, fine dining, and world-class amenities for travelers and business guests.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <p>Home</p>
+                <p>Rooms</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Ph: 6238199113</p>
+                <p>Check-in: 12:00 pm</p>
+                <p>Check-out: 12:00 pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Hotel Victory International. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <button class="lightbox-close" aria-label="Close Gallery" onclick="closeLightbox()">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous Image" onclick="changeLightboxImage(-1)">&#10094;</button>
+        <img class="lightbox-content" id="lightboxImg" alt="Gallery Full Screen View">
+        <button class="lightbox-next" aria-label="Next Image" onclick="changeLightboxImage(1)">&#10095;</button>
+        <div id="lightboxCaption"></div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-header" style="text-align: center; margin-bottom: 30px;">
+                <h2 style="color: var(--accent-color); font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 10px;">Reserve Your Stay</h2>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; letter-spacing: 1px;">Experience the best hospitality in Kunnamkulam</p>
+            </div>
+            
+            <form id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="b_name">Full Name</label>
+                        <input type="text" id="b_name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="b_phone">Phone Number</label>
+                        <input type="tel" id="b_phone" required placeholder="+91 xxxxx xxxxx">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="b_room">Room Type</label>
+                    <select id="b_room" required>
+                        <option value="A/C Deluxe Room">A/C Deluxe Room - ₹2,000/night</option>
+                        <option value="Non AC Standard Room">Non AC Standard Room - ₹1,400/night</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="b_checkin">Check-in Date & Time</label>
+                        <input type="text" id="b_checkin" required placeholder="Select Check-in">
+                    </div>
+                    <div class="form-group">
+                        <label for="b_checkout">Check-out Date</label>
+                        <input type="text" id="b_checkout" required placeholder="Select Check-out">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="b_guests">Number of Guests</label>
+                    <input type="number" id="b_guests" min="1" max="10" value="1" required>
+                </div>
+
+                <div class="form-actions" style="margin-top: 30px; display: flex; flex-direction: column; gap: 15px;">
+                    <button type="button" class="btn-primary" onclick="sendToWhatsApp()" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1.1rem; padding: 15px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.005-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                        Confirm via WhatsApp
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/916238199113" target="_blank" class="whatsapp-float">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.005-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+
+    <!-- Vanilla Tilt JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
